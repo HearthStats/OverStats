@@ -26,6 +26,12 @@ p.large {
     font-size: 16px;
 }
 
+p.hs-description{
+    width: 50%;
+    margin: auto;
+    margin-top: 10px;
+}
+
 a,
 a:hover,
 a:focus,
