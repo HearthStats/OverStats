@@ -124,7 +124,7 @@ fieldset[disabled] .btn-primary.active {
 }
 
 .btn-xl {
-    padding: 20px 40px;
+    padding: 12px 24px;
     border-color: #F47422;
     border-radius: 3px;
     text-transform: uppercase;
@@ -193,7 +193,8 @@ fieldset[disabled] .btn-xl.active {
 } 
 
 .navbar-brand img{
-    height: 100%;
+    height: 90%;
+    max-width: ;
 }
 
 .navbar-default .navbar-collapse {
@@ -667,6 +668,11 @@ section#products h2{
 
 section#products img{
     width: 100%;
+}
+
+section#products a{
+    text-decoration: none;
+    font-size: 1.5em;
 }
 
 aside.clients img {
