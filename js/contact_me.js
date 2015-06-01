@@ -18,13 +18,22 @@ $(function() {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
             $.ajax({
-                url: "././mail/contact_me.php",
+                url: "https://mandrillapp.com/api/1.0/",
                 type: "POST",
                 data: {
-                    name: name,
-                    phone: phone,
-                    email: email,
-                    message: message
+                    key: "",
+                        "message": {
+                            "subject": "OverStats Contact MSG",
+                            "text": massage + " from: " + name + " phone: " + phone,
+                            "from_email": email,
+                            "from_name": name,
+                        "to": {
+                            "email": "jeff@hearthstats.net",
+                            "name": "Jeffrey Tong",
+                            "type": "to"
+                        }
+
+                    }
                 },
                 cache: false,
                 success: function() {
